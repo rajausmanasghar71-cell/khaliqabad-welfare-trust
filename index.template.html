@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{ABOUT}}">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Nastaliq Urdu",sans-serif;background:#f5faf7;color:#173b2a;line-height:1.9}
+header{background:#0c6b3d;color:#fff;padding:12px 6%;display:flex;align-items:center;justify-content:space-between;gap:15px;position:sticky;top:0;z-index:5}
+header img{width:58px;height:58px;object-fit:contain;background:#fff;border-radius:50%;padding:3px}
+nav a{color:#fff;text-decoration:none;margin:0 8px;font-weight:bold}
+.hero{padding:55px 6%;text-align:center;background:linear-gradient(135deg,#eaf8ef,#fff)}
+.hero img{width:150px;max-width:45vw;border-radius:20px}
+.hero h1{font-size:clamp(28px,6vw,48px);margin:15px 0 5px;color:#075d35}.hero p{max-width:780px;margin:auto;font-size:18px}
+section{max-width:1050px;margin:auto;padding:45px 6%}h2{text-align:center;color:#0b6b3c;font-size:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card{background:#fff;padding:22px;border-radius:16px;box-shadow:0 5px 18px #00000012}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.gallery img{width:100%;height:180px;object-fit:cover;border-radius:14px}
+.contact{text-align:center;background:#e8f6ed;border-radius:20px}.btn{display:inline-block;background:#0b6b3c;color:#fff;padding:10px 20px;border-radius:10px;text-decoration:none;margin:6px}
+footer{text-align:center;padding:20px;background:#0b4e2e;color:#fff}
+</style>
+</head>
+<body>
+<header>
+<img src="images/logo.jpg" alt="خالق آباد ویلفیئر ٹرسٹ">
+<nav><a href="#about">ہمارے بارے میں</a><a href="#work">ہمارے کام</a><a href="#gallery">گیلری</a><a href="#contact">رابطہ</a></nav>
+</header>
+<div class="hero">
+<img src="images/logo.jpg" alt="لوگو">
+<h1>{{TITLE}}</h1><p>{{INTRO}}</p>
+</div>
+<section id="about"><h2>ہمارے بارے میں</h2><p>{{ABOUT}}</p></section>
+<section id="work"><h2>ہمارے کام</h2><div class="cards">{{WORK_CARDS}}</div></section>
+<section id="gallery"><h2>ہماری سرگرمیاں</h2><div class="gallery">{{GALLERY}}</div></section>
+<section id="contact"><div class="contact"><h2>رابطہ</h2><p>{{CONTACT}}</p><a class="btn" href="{{FACEBOOK}}" target="_blank">Facebook</a>{{WHATSAPP_BUTTON}}</div></section>
+<footer>© 2026 {{TITLE}}</footer>
+</body></html>
