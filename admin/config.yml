@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPOSITORY
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "ویب سائٹ"
+    files:
+      - name: "content"
+        label: "ویب سائٹ کا مواد"
+        file: "content/site.yml"
+        fields:
+          - {label: "ٹرسٹ کا نام", name: "title", widget: "string"}
+          - {label: "ابتدائی تعارف", name: "intro", widget: "text"}
+          - {label: "ہمارے بارے میں", name: "about", widget: "text"}
+          - {label: "رابطہ", name: "contact", widget: "text"}
+          - {label: "Facebook لنک", name: "facebook", widget: "string"}
+          - {label: "WhatsApp نمبر/لنک", name: "whatsapp", widget: "string", required: false}
+          - label: "ہمارے کام"
+            name: "works"
+            widget: "list"
+            fields:
+              - {label: "عنوان", name: "title", widget: "string"}
+              - {label: "تفصیل", name: "description", widget: "text"}
+          - label: "گیلری"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - {label: "تصویر", name: "image", widget: "image", required: false}
+              - {label: "کیپشن", name: "caption", widget: "string", required: false}
